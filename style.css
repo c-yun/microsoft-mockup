@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    margin: 0 40px 0 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22fr 12fr 22fr 16fr 22fr 6fr;
+    grid-template-areas: 
+    "feature"
+    "hardbox"
+    "xbox"
+    "softbox"
+    "btmfeature"
+    "smedia";
+}
+
+header {
+    grid-area: header;
+    height: 40px;
+}
+
+#feature {
+    grid-area: feature;
+    margin: 0 40px 10px 40px;
+}
+
+.hardbox {
+    grid-area: hardbox;
+    margin: 30px 40px;
+}
+
+#hardware1, #hardware2, #hardware3 {
+    padding-right: 25px;
+}
+
+#xbox {
+    grid-area: xbox;
+    margin: 30px 40px;
+    font-weight: bold;
+    font-size: 40px;
+    border: 8px dotted lightgray;
+}
+
+.softbox {
+    grid-area: softbox;
+    margin: 30px 40px;
+    border: 8px dotted lightgray;
+}
+
+#btmfeature {
+    grid-area: btmfeature;
+    margin: 30px 40px;
+    border: 8px dotted lightgray;
+}
+
+#smedia {
+    grid-area: smedia;
+    margin: 0 40px 30px 40px;
+    border: 8px dotted lightgray;
+}
+
+footer {
+    grid-area: footer;
+    height: 350px;
+    background: whitesmoke;
+    border: 8px dotted lightgray;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#hardware4 {
+    height: 100%;
+}
+
+
+@media screen and (min-width: 540px) {
+    main {
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: 22fr 12fr 22fr 16fr 22fr 6fr;
+        grid-template-areas: 
+            "feature feature"
+            "hardbox hardbox"
+            "xbox xbox"
+            "softbox softbox"
+            "btmfeature btmfeature"
+            "smedia smedia";
+        }
+    .hardbox {
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: 50fr 50fr;
+        }
+    .softbox {
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: 50fr 50fr;
+        }
+    }
+
+@media screen and (min-width: 1084px) {
+    main {
+        display: grid;
+        grid-template-columns: 25fr 25fr 25fr 25fr;
+        grid-template-rows: 22fr 12fr 22fr 16fr 22fr 6fr;
+        grid-template-areas: 
+            "feature feature feature feature"
+            "hardbox hardbox hardbox hardbox"
+            "xbox xbox xbox xbox"
+            "softbox softbox softbox softbox"
+            "btmfeature btmfeature btmfeature btmfeature"
+            "smedia smedia smedia smedia";
+        }
+    .hardbox {
+        display: grid;
+        grid-template-columns: 25fr 25fr 25fr 25fr;
+        grid-template-rows: 1fr;
+        }
+    .softbox {
+        display: grid;
+        grid-template-columns: 25fr 25fr 25fr 25fr;
+        grid-template-rows: 1fr;
+        }
+    }
+
+    /* * {
+        border: 1px solid black;
+    } */
+
+    
